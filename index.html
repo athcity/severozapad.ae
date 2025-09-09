@@ -2,35 +2,32 @@
 <html>
 <head>
     <title>Dubai Dreams. European Standards.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: #f5f5f5;
+            box-sizing: border-box;
         }
-        .container {
-            text-align: center;
-            max-width: 1200px;
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        
+        .fullscreen-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
-        h1 {
-            font-family: Arial, sans-serif;
-            color: #333;
-            margin-top: 20px;
-        }
+        
+        /* Если хотите, чтобы картинка не обрезалась, замените object-fit: cover на object-fit: contain */
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="landing.png" alt="Dubai Dreams European Standards">
-        <h1>Coming Soon | Скоро открытие</h1>
-    </div>
+    <img src="landing.png" alt="Dubai Dreams European Standards" class="fullscreen-image">
 </body>
 </html>
